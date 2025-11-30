@@ -1,0 +1,25 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="60" y1="80" x2="440" y2="432" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#0b1221"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="120" y1="120" x2="380" y2="392" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="160" y1="160" x2="352" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00d19a"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="464" height="464" rx="120" fill="url(#bg)"/>
+  <circle cx="256" cy="248" r="138" fill="none" stroke="url(#accent)" stroke-width="26" stroke-linecap="round" stroke-dasharray="36 18"/>
+  <circle cx="256" cy="248" r="98" fill="none" stroke="url(#accent2)" stroke-width="22" stroke-linecap="round" stroke-dasharray="24 14"/>
+  <path d="M256 144c-39 0-70 31-70 70 0 52 70 96 70 96s70-44 70-96c0-39-31-70-70-70z" fill="url(#accent)"/>
+  <path d="M256 184c-17 0-32 14-32 30 0 24 32 44 32 44s32-20 32-44c0-16-15-30-32-30z" fill="#0f172a"/>
+  <path d="M214 340c20 10 42 16 66 16s46-6 66-16c10 6 18 16 18 28 0 34-37 62-84 62s-84-28-84-62c0-12 8-22 18-28z" fill="url(#accent2)"/>
+  <circle cx="216" cy="224" r="10" fill="#0f172a"/>
+  <circle cx="296" cy="224" r="10" fill="#0f172a"/>
+  <path d="M236 266c8 8 20 12 32 12s24-4 32-12" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+</svg>
