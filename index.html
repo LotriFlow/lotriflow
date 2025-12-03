@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LotriFlow - Build Healthier Routines</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    :root {
+      --bg: #0a0f1a;
+      --surface: #111827;
+      --primary: #38bdf8;
+      --accent: #22c55e;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    
+    .logo {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    
+    .tagline {
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    
+    .app-card {
+      background: var(--surface);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    
+    .app-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .app-icon {
+      font-size: 2.5rem;
+    }
+    
+    .app-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    
+    .app-subtitle {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    
+    .app-description {
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .feature {
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--primary);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--primary);
+      color: var(--bg);
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: opacity 0.2s;
+    }
+    
+    .btn:hover { opacity: 0.9; }
+    
+    .btn-secondary {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .badge {
+      background: var(--accent);
+      color: var(--bg);
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-left: 0.5rem;
+    }
+    
+    .coming-soon .badge {
+      background: var(--muted);
+    }
+    
+    footer {
+      text-align: center;
+      padding-top: 3rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+      margin: 0 0.75rem;
+    }
+    
+    footer a:hover { color: var(--primary); }
+    
+    .links { margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">🌱</div>
+      <h1>LotriFlow</h1>
+      <p class="tagline">Build healthier routines, one day at a time</p>
+    </header>
+    
+    <div class="app-card">
+      <div class="app-header">
+        <div class="app-icon">��</div>
+        <div>
+          <div class="app-title">SmokeFree <span class="badge">Available</span></div>
+          <div class="app-subtitle">Your quit smoking companion</div>
+        </div>
+      </div>
+      <p class="app-description">
+        Track your smoke-free journey with personalized timers, health milestones, 
+        craving support, and gentle coaching. All data stays private on your device.
+      </p>
+      <div class="features">
+        <span class="feature">⏱️ Quit Timer</span>
+        <span class="feature">🏆 Milestones</span>
+        <span class="feature">📊 Progress Stats</span>
+        <span class="feature">🧘 Breathing Exercises</span>
+        <span class="feature">⌚ Apple Watch</span>
+      </div>
+      <a href="https://apps.apple.com/app/smokefree-journey-by-lotriflow/id6740043774" class="btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download on App Store
+      </a>
+    </div>
+    
+    <div class="app-card coming-soon">
+      <div class="app-header">
+        <div class="app-icon">⏰</div>
+        <div>
+          <div class="app-title">Fasting <span class="badge">Coming Soon</span></div>
+          <div class="app-subtitle">Intermittent fasting made simple</div>
+        </div>
+      </div>
+      <p class="app-description">
+        Adaptive fasting schedules with gentle nudges, streak tracking, and 
+        weekly reflections. Same calm design, same privacy-first approach.
+      </p>
+      <a href="mailto:hello@lotriflow.com" class="btn btn-secondary">Get Notified</a>
+    </div>
+    
+    <footer>
+      <p>© 2025 LotriFlow. All rights reserved.</p>
+      <div class="links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="mailto:hello@lotriflow.com">Contact</a>
+        <a href="https://github.com/LotriFlow">GitHub</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
